@@ -1,18 +1,27 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import { header, btn } from "../styles/home.module.css"
+import * as styles from "../styles/home.module.css"
 
 export default function Home() {
   return (
     <Layout>
-      <section className={header}>
+      <section className={styles.header}>
         <div>
-          <h2>Design</h2>
-          <h3>Develop & Deploy</h3>
-          <p>UX designer & web developer based in Manchester.</p>
-          <Link className={btn} to="/contact">
-            Contactame
+          <h1>
+            Hi, my name is Ani. <br /> I design and{" "}
+            <span>develop websites</span> for entrepreneurs and professionals.
+          </h1>
+          <p>
+            I would like to join a team. Look around this site to know me better
+            and contact me if you'd like to!
+          </p>
+          <Link className={styles.btn} to="/contact">
+            Contact me
+          </Link>
+          &nbsp; &nbsp;
+          <Link className={styles.btn} to="/projects">
+            See my projects
           </Link>
         </div>
       </section>

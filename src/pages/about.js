@@ -1,86 +1,52 @@
 import React from "react"
 import Layout from "../components/Layout"
+import { StaticImage } from "gatsby-plugin-image"
+import * as styles from "../../src/styles/about.module.css"
 
 const About = () => {
   return (
     <Layout>
-      <div>
-        <h1>About page</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
-          ipsum corrupti nostrum iure ipsam, unde eveniet temporibus eaque
-          distinctio porro, accusamus, cum officia! Numquam, quam dolores
-          praesentium quae sapiente tenetur minima officia reprehenderit
-          cupiditate minus ad animi, sit, cumque omnis earum totam sint maxime?
-          Eveniet voluptatum officiis minus, debitis consectetur voluptas
-          numquam animi magni sequi corporis ipsum odio voluptatibus nulla
-          tempora, sunt aliquid? Ea qui recusandae eius nostrum dolorum saepe
-          laboriosam dolorem molestiae, blanditiis expedita odit obcaecati, amet
-          quia deserunt! Repellat at suscipit expedita vel nam, odit molestiae
-          quo pariatur quod alias, explicabo quibusdam nostrum illo eum fugiat
-          iusto corporis doloremque tempore! Eum molestias fuga dolor
-          praesentium vitae, quaerat doloribus, aspernatur quas fugiat illo
-          voluptate reiciendis amet aperiam ratione vero? A expedita, recusandae
-          laboriosam deserunt aperiam nostrum, temporibus corrupti hic vero
-          atque numquam nobis sed, magnam id ipsa quis animi quos pariatur alias
-          quae! Accusamus labore non incidunt quasi debitis perspiciatis fugiat,
-          excepturi exercitationem perferendis quas similique culpa impedit
-          natus facilis hic dicta dolorum qui quis molestiae? Aperiam non
-          delectus reprehenderit modi ipsa, necessitatibus fugit consequuntur
-          maiores neque nihil velit provident, voluptates eius soluta accusamus
-          ipsum harum id architecto sapiente, nemo ad rerum expedita? Quasi
-          dolore dolores id omnis a.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
-          ipsum corrupti nostrum iure ipsam, unde eveniet temporibus eaque
-          distinctio porro, accusamus, cum officia! Numquam, quam dolores
-          praesentium quae sapiente tenetur minima officia reprehenderit
-          cupiditate minus ad animi, sit, cumque omnis earum totam sint maxime?
-          Eveniet voluptatum officiis minus, debitis consectetur voluptas
-          numquam animi magni sequi corporis ipsum odio voluptatibus nulla
-          tempora, sunt aliquid? Ea qui recusandae eius nostrum dolorum saepe
-          laboriosam dolorem molestiae, blanditiis expedita odit obcaecati, amet
-          quia deserunt! Repellat at suscipit expedita vel nam, odit molestiae
-          quo pariatur quod alias, explicabo quibusdam nostrum illo eum fugiat
-          iusto corporis doloremque tempore! Eum molestias fuga dolor
-          praesentium vitae, quaerat doloribus, aspernatur quas fugiat illo
-          voluptate reiciendis amet aperiam ratione vero? A expedita, recusandae
-          laboriosam deserunt aperiam nostrum, temporibus corrupti hic vero
-          atque numquam nobis sed, magnam id ipsa quis animi quos pariatur alias
-          quae! Accusamus labore non incidunt quasi debitis perspiciatis fugiat,
-          excepturi exercitationem perferendis quas similique culpa impedit
-          natus facilis hic dicta dolorum qui quis molestiae? Aperiam non
-          delectus reprehenderit modi ipsa, necessitatibus fugit consequuntur
-          maiores neque nihil velit provident, voluptates eius soluta accusamus
-          ipsum harum id architecto sapiente, nemo ad rerum expedita? Quasi
-          dolore dolores id omnis a.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
-          ipsum corrupti nostrum iure ipsam, unde eveniet temporibus eaque
-          distinctio porro, accusamus, cum officia! Numquam, quam dolores
-          praesentium quae sapiente tenetur minima officia reprehenderit
-          cupiditate minus ad animi, sit, cumque omnis earum totam sint maxime?
-          Eveniet voluptatum officiis minus, debitis consectetur voluptas
-          numquam animi magni sequi corporis ipsum odio voluptatibus nulla
-          tempora, sunt aliquid? Ea qui recusandae eius nostrum dolorum saepe
-          laboriosam dolorem molestiae, blanditiis expedita odit obcaecati, amet
-          quia deserunt! Repellat at suscipit expedita vel nam, odit molestiae
-          quo pariatur quod alias, explicabo quibusdam nostrum illo eum fugiat
-          iusto corporis doloremque tempore! Eum molestias fuga dolor
-          praesentium vitae, quaerat doloribus, aspernatur quas fugiat illo
-          voluptate reiciendis amet aperiam ratione vero? A expedita, recusandae
-          laboriosam deserunt aperiam nostrum, temporibus corrupti hic vero
-          atque numquam nobis sed, magnam id ipsa quis animi quos pariatur alias
-          quae! Accusamus labore non incidunt quasi debitis perspiciatis fugiat,
-          excepturi exercitationem perferendis quas similique culpa impedit
-          natus facilis hic dicta dolorum qui quis molestiae? Aperiam non
-          delectus reprehenderit modi ipsa, necessitatibus fugit consequuntur
-          maiores neque nihil velit provident, voluptates eius soluta accusamus
-          ipsum harum id architecto sapiente, nemo ad rerum expedita? Quasi
-          dolore dolores id omnis a.
-        </p>
+      <div className={styles.container}>
+        <br />
+        <div className={styles.description}>
+          <StaticImage
+            alt="A photo of me"
+            src="../images/avatar.jpg"
+            className={styles.img}
+          />
+          <div className={styles.descriptiontext}>
+            <h1>About me</h1>
+            <h3>
+              I'm a self-taught web developer. I enjoy the process of creating a
+              functional with a good experience for users. I develop sites in
+              HTML, CSS, Javascript and React. And am in constant search for
+              librarys to sharpen my skills.
+            </h3>
+            <br />
+            <h3>
+              I find interesting and have experience in the design process as
+              well. I design the sites in Figma before coding, do some basic
+              wireframes and then prototype it.
+            </h3>
+            <br />
+            <h3>
+              I would like to work with a team in order to keep learning and
+              sharing ideas.
+            </h3>
+          </div>
+        </div>
+        <br />
+        <h1>Skills</h1>
+        <br />
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Javascript</p>
+        <p>React</p>
+        <p>Styled components</p>
+        <p>Gatsby.js</p>
+        <p>GraphQL</p>
+        <p>Git & Github</p>
+        <p>Figma</p>
       </div>
     </Layout>
   )

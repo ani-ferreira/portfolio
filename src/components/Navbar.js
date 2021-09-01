@@ -1,30 +1,47 @@
-import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import React, { useState, useRef, useEffect } from "react"
+import { FaBars } from "@react-icons/all-files/fa/FaBars"
+import links from "../data/links.js"
+import { Link } from "gatsby"
 
-export default function Navbar() {
-  const data = useStaticQuery(graphql`
-    query SiteInfo {
-      site {
-        siteMetadata {
-          title
-        }
-      }
+const Navbar = () => {
+  const [showLinks, setShowLinks] = useState(false)
+  const linksContainerRef = useRef(null)
+  const linksRef = useRef(null)
+  const toggleLinks = () => {
+    setShowLinks(!showLinks)
+  }
+  useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`
+    } else {
+      linksContainerRef.current.style.height = "0px"
     }
-  `)
-
-  const { title } = data.site.siteMetadata
-
+  }, [showLinks])
   return (
     <nav>
-      <Link to="/">
-        <h1>{title}</h1>
-      </Link>
-      <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/about">About</Link>
-        <Link to="/blog">Blog</Link>
+      <div className="nav-center">
+        <div className="nav-header">
+          <Link to="/">Home</Link>
+          <button className="nav-toggle" onClick={toggleLinks}>
+            <FaBars />
+          </button>
+        </div>
+        <div className="links-container" ref={linksContainerRef}>
+          <ul className="links" ref={linksRef}>
+            {links.map(link => {
+              const { id, url, text } = link
+              return (
+                <li key={id}>
+                  <a href={url}>{text}</a>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
       </div>
     </nav>
   )
 }
+
+export default Navbar
