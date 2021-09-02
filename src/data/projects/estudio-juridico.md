@@ -8,7 +8,7 @@ sequence: 1
 fullImg: ../../images/projects/full/w1.png
 thumbImg: ../../images/projects/thumb/w1.png
 imageAlt: Logo estudio juridico
-app: http://mhs-captcha-app.surge.sh/
+app: https://estudiojferreira.netlify.app
 repo: https://github.com/ani-ferreira/estudio-ferreira
 ---
 

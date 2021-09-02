@@ -1,6 +1,6 @@
 .header {
   align-items: center;
-  width: 85%;
+  width: 93%;
   margin-top: 4rem;
 }
 .header h1 {
@@ -37,5 +37,8 @@ h1:hover span {
 @media screen and (min-width: 800px) {
   .header h1 {
     font-size: 3em;
+  }
+  .header {
+    width: 95%;
   }
 }

@@ -8,8 +8,8 @@ sequence: 1
 fullImg: ../../images/projects/full/w1.png
 thumbImg: ../../images/projects/thumb/w1.png
 imageAlt: Logo estudio juridico
-app: https://www.youtube.com/
-repo: https://github.com/mhsmith321/GA-project-1-captcha
+app: https://psic.netlify.app
+repo: https://github.com/ani-ferreira/psico-rolon
 ---
 
 ### About

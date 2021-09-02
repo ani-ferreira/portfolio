@@ -8,7 +8,7 @@ sequence: 1
 fullImg: ../../images/projects/full/w2.png
 thumbImg: ../../images/projects/thumb/w2.png
 imageAlt: Logo estudio juridico
-app: https://practical-euler-d5319e.netlify.app
+app: https://movies-fav.netlify.app
 repo: https://github.com/ani-ferreira/react-movies
 ---
 

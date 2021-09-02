@@ -8,8 +8,8 @@ sequence: 1
 fullImg: ../../images/projects/full/w2.png
 thumbImg: ../../images/projects/thumb/w2.png
 imageAlt: Logo estudio juridico
-app: https://www.youtube.com/
-repo: https://github.com/mhsmith321/GA-project-1-captcha
+app: https://portfolio-ani.netlify.app
+repo: https://github.com/ani-ferreira/portfolio
 ---
 
 ### About
