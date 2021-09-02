@@ -3,7 +3,6 @@ import Layout from "../components/Layout"
 import { Link } from "gatsby"
 import * as styles from "../../src/styles/contact.module.css"
 import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope"
-import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin"
 
 const Contact = () => {
   return (
@@ -23,14 +22,7 @@ const Contact = () => {
             />
             Email
           </Link>
-          &nbsp; &nbsp;
-          <Link to="/" className={styles.btn}>
-            <FaLinkedin
-              className={styles.icon}
-              style={{ fill: "var(--clr-dark-complement)" }}
-            />
-            LinkedIn
-          </Link>
+          &nbsp;
         </div>
       </div>
     </Layout>

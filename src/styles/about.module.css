@@ -16,7 +16,8 @@
   margin-bottom: 1rem;
 }
 
-h3 {
+h3,
+.h3 {
   color: var(--clr-white);
   line-height: 1.3em;
 }
@@ -26,6 +27,21 @@ h1 {
 }
 .skills {
   padding: 4rem;
+}
+
+.btnshow {
+  color: white;
+  background-color: transparent;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 30px;
+  border: 2px solid var(--clr-complement);
+}
+.btnshow:hover {
+  color: white;
+  background: var(--clr-complement);
 }
 @media screen and (min-width: 800px) {
   .container {
