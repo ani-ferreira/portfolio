@@ -5,8 +5,8 @@ description: This portfolio shows information about me and my skills. The view l
 slug: psicologo
 main: true
 sequence: 1
-fullImg: ../../images/projects/full/w2.png
-thumbImg: ../../images/projects/thumb/w2.png
+fullImg: ../../images/projects/full/po.png
+thumbImg: ../../images/projects/thumb/po.png
 imageAlt: Logo estudio juridico
 app: https://portfolio-ani.netlify.app
 repo: https://github.com/ani-ferreira/portfolio

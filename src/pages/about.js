@@ -44,7 +44,7 @@ const About = () => {
             </button>
             <div>
               {show ? (
-                <h3 className={styles.h3}>
+                <h3 className={styles.more}>
                   I have completed the following courses and obtained
                   certifications: <i>Introduction to Web Development</i> from
                   UCDavis, <i>Diseñando páginas web con Bootstrap 4</i> from
@@ -54,8 +54,8 @@ const About = () => {
                     FreeCodeCamp
                   </Link>
                   .<br /> When Im interested in learning some new technology I
-                  read documentation and watch tutorials about it. Im planning
-                  also to join a career on CS next year.
+                  read docs and watch tutorials about it. Im planning also to
+                  join a career on CS next year.
                 </h3>
               ) : null}
             </div>

@@ -5,8 +5,8 @@ description: This static site shows info and contacts for a professional.
 slug: estudio-juridico
 main: true
 sequence: 1
-fullImg: ../../images/projects/full/w1.png
-thumbImg: ../../images/projects/thumb/w1.png
+fullImg: ../../images/projects/full/ej.png
+thumbImg: ../../images/projects/thumb/ej.png
 imageAlt: Logo estudio juridico
 app: https://estudiojferreira.netlify.app
 repo: https://github.com/ani-ferreira/estudio-ferreira
