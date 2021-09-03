@@ -22,7 +22,9 @@ const Navbar = () => {
     <nav>
       <div className="nav-center">
         <div className="nav-header">
-          <Link to="/">Home</Link>
+          <Link to="/" className="logo">
+            A
+          </Link>
           <button className="nav-toggle" onClick={toggleLinks}>
             <FaBars />
           </button>

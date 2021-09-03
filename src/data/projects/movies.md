@@ -7,7 +7,7 @@ main: true
 sequence: 1
 fullImg: ../../images/projects/full/mf.png
 thumbImg: ../../images/projects/thumb/mf.png
-imageAlt: Logo estudio juridico
+imageAlt: Logo
 app: https://movies-fav.netlify.app
 repo: https://github.com/ani-ferreira/react-movies
 ---

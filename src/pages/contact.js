@@ -20,7 +20,7 @@ const Contact = () => {
               className={styles.icon}
               style={{ fill: "var(--clr-dark-complement)" }}
             />
-            Email
+            &nbsp; anabelevelyn@live.com
           </Link>
           &nbsp;
         </div>

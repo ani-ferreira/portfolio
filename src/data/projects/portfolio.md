@@ -7,7 +7,7 @@ main: true
 sequence: 1
 fullImg: ../../images/projects/full/po.png
 thumbImg: ../../images/projects/thumb/po.png
-imageAlt: Logo estudio juridico
+imageAlt: Logo
 app: https://portfolio-ani.netlify.app
 repo: https://github.com/ani-ferreira/portfolio
 ---
