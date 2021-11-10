@@ -8,8 +8,8 @@ sequence: 1
 fullImg: ../../images/projects/full/me.png
 thumbImg: ../../images/projects/thumb/me.png
 imageAlt: Logo
-app: https://react-menu-site.netlify.app/
-repo: https://github.com/ani-ferreira/react-menu
+app: https://reactframermenu.netlify.app/
+repo: https://github.com/ani-ferreira/react-framer-menu
 ---
 
 ### About
