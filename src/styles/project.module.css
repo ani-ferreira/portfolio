@@ -47,7 +47,9 @@
 
   font-weight: 500;
 }
-
+.gicon {
+  margin-right: 3px;
+}
 .btn:hover {
   background: transparent;
   border: 2px solid var(--clr-complement);

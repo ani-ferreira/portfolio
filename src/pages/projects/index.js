@@ -26,7 +26,7 @@ export default function allProjects({ data }) {
           </Link>
           &nbsp; &nbsp;
           <Link to={project.frontmatter.repo} className={styles.btn}>
-            <FaGithub />
+            <FaGithub className={styles.gicon} />
             Github
           </Link>
         </div>
