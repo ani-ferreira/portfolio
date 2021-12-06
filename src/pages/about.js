@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../../src/styles/about.module.css"
+import { BsBook } from "@react-icons/all-files/bs/BsBook"
 
 const About = () => {
   const [show, setShow] = useState(false)
@@ -12,7 +13,6 @@ const About = () => {
       <div className={styles.container}>
         <br />
         <div className={styles.description}>
-          {" "}
           <StaticImage
             alt="A photo of me"
             src="../images/perfil.jpg"
@@ -23,19 +23,18 @@ const About = () => {
             <h3>
               I'm a self-taught web developer. I enjoy the process of creating a
               functional site with a good experience for users. I code in HTML,
-              CSS, Javascript and React. And Im in constant search for librarys
-              to sharpen my skills.
+              CSS, Javascript. React.js is my favourite framework and I´m in
+              constant search for librarys to sharpen my skills.
             </h3>
             <br />
             <h3>
-              I find interesting and have experience in the design process as
-              well. I design the sites in Figma before coding, do some basic
-              wireframes and then prototype it.
+              I find interesting the design process as well. I design the sites
+              in Figma, do some basic wireframes and prototyping before coding.
             </h3>
             <br />
             <h3>
               I would like to work with a team in order to keep learning and
-              sharing ideas.
+              share ideas.
             </h3>
 
             <br />
@@ -46,16 +45,32 @@ const About = () => {
               {show ? (
                 <h3 className={styles.more}>
                   I have completed the following courses and obtained
-                  certifications: <i>Introduction to Web Development</i> from
-                  UCDavis, <i>Diseñando páginas web con Bootstrap 4</i> from
-                  Universidad Austral and <i>Responsive web design</i> from the{" "}
-                  <Link to={"https://www.freecodecamp.org/anaferreira"}>
-                    {" "}
-                    FreeCodeCamp
-                  </Link>
-                  .<br /> When Im interested in learning some new technology I
-                  read docs and watch tutorials about it. Im planning also to
-                  join a career on CS next year.
+                  certifications:
+                  <br /> <br />
+                  <ul>
+                    <li>
+                      <BsBook className={styles.icon} />
+                      "Introduction to Web Development" - UCDavis
+                    </li>
+                    <li>
+                      <BsBook className={styles.icon} /> "Diseñando páginas web
+                      con Bootstrap 4" - Universidad Austral
+                    </li>
+                    <li>
+                      <BsBook className={styles.icon} />
+                      "Responsive web design" -
+                      <Link to={"https://www.freecodecamp.org/anaferreira"}>
+                        FreeCodeCamp
+                      </Link>
+                    </li>
+                    <li>
+                      <BsBook className={styles.icon} />
+                      "React - The complete guide" - Udemy
+                    </li>
+                  </ul>
+                  <br />
+                  Currently, I´m studing Tecnicatura Universitaria en
+                  Programación Informática at Universidad de Quilmes.
                 </h3>
               ) : null}
             </div>
@@ -68,6 +83,7 @@ const About = () => {
           <p>CSS</p>
           <p>Javascript</p>
           <p>React</p>
+          <p>Material UI</p>
           <p>Styled components</p>
           <p>Gatsby.js</p>
           <p>GraphQL</p>
