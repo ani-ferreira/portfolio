@@ -6,18 +6,24 @@
 .header h1 {
   font-size: 2em;
 }
+.header h3 {
+  font-size: 1em;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
 .btn {
   display: inline-block;
   background: var(--clr-complement);
   padding: 10px 16px;
   border-radius: 30px;
-  margin-top: 20px;
   font-weight: 500;
 }
 
-.btn:hover {
-  background: transparent;
-  border: 2px solid var(--clr-complement);
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em #8b8b8b;
+  transform: translateY(-0.25em);
+  transition: 300ms ease-out;
 }
 
 h1 span {
@@ -40,5 +46,9 @@ h1:hover span {
   }
   .header {
     width: 95%;
+  }
+  .header h3 {
+    font-size: 1.5em;
+    font-weight: 100;
   }
 }

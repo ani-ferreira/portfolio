@@ -9,13 +9,17 @@ export default function Home() {
       <section className={styles.header}>
         <div>
           <h1>
-            Hi, my name is Ani. <br /> I design and{" "}
-            <span>develop websites</span> for entrepreneurs and professionals.
+            <span>
+              Hi, my name is Ana. <br />
+              I'm a self-taught web developer. <br />I enjoy the process of
+              creating functional web applications with a good experience for
+              users.
+            </span>
           </h1>
-          <p>
-            I would like to join a team. Look around this site to know me better
-            and contact me if you'd like to!
-          </p>
+          <h3>
+            Look around this site to know me better and contact me if you'd like
+            to!
+          </h3>
           <Link className={styles.btn} to="/contact">
             Contact me
           </Link>
