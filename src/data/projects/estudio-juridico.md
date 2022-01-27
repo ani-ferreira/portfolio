@@ -1,7 +1,7 @@
 ---
 title: Estudio Juridico
 stack: HTML - CSS - JAVASCRIPT
-description: This static site shows information and contacts of a lawyer firm. It has a form powered by Netlify.
+description: This static site shows information for a law firm. It has a form powered by Netlify.
 slug: estudio-juridico
 main: true
 sequence: 1

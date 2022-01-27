@@ -14,7 +14,7 @@ repo: https://github.com/ani-ferreira/react-framer-menu
 
 ### About
 
-Food menu
+Menu
 
 ### Tech Stack
 
