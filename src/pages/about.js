@@ -8,6 +8,13 @@ import { BsBook } from "@react-icons/all-files/bs/BsBook"
 const About = () => {
   const [show, setShow] = useState(false)
 
+  let showMoreBtn = ""
+  if (show === true) {
+    showMoreBtn = "-"
+  } else {
+    showMoreBtn = "+"
+  }
+
   return (
     <Layout>
       <div className={styles.container}>
@@ -21,63 +28,74 @@ const About = () => {
           <div className={styles.descriptiontext}>
             <h1>About me</h1>
             <h3>
-              I'm a self-taught web developer. I enjoy the process of creating a
-              functional site with a good experience for users. I code in HTML,
-              CSS, Javascript. React.js is my favourite framework and I´m in
-              constant search for librarys to sharpen my skills.
+              My name is Ana, I’m 27 and live in Buenos Aires.
+              <br />
+              <br />
+              My interest in web development started back in 2019 when I
+              discovered javascript and I haven’t stopped coding JS lines since
+              then. I´ve also been adding along different technologies to my
+              stack.
+              <br />
+              <br />
+              My projects are mainly in React, I´ve been diving deeper into
+              React itself as well as libraries and tools surrounding it.
+              However, I dabbled in Gatsby.js and GraphQL to make this site
+              &nbsp;
+              <span role="img" alt="smiley-face">
+                😃
+              </span>
+              <br />
+              <br />
+              I find interesting the design process as well. Sometimes I design
+              the sites in Figma, do some basic wireframes and prototyping
+              before coding.
+              <br />
+              <br />I would like to work with a team in order to keep learning
+              and sharing ideas.
             </h3>
             <br />
-            <h3>
-              I find interesting the design process as well. I design the sites
-              in Figma, do some basic wireframes and prototyping before coding.
-            </h3>
-            <br />
-            <h3>
-              I would like to work with a team in order to keep learning and
-              share ideas.
-            </h3>
-
-            <br />
-            <button onClick={() => setShow(true)} className={styles.btnshow}>
-              +
+            <button onClick={() => setShow(!show)} className={styles.btnshow}>
+              {showMoreBtn}
             </button>
             <div>
               {show ? (
-                <h3 className={styles.more}>
-                  I have completed the following courses and obtained
-                  certifications:
-                  <br /> <br />
-                  <ul>
-                    <li>
-                      <BsBook className={styles.icon} />
-                      "Introduction to Web Development" - UCDavis
-                    </li>
-                    <li>
-                      <BsBook className={styles.icon} /> "Diseñando páginas web
-                      con Bootstrap 4" - Universidad Austral
-                    </li>
-                    <li>
-                      <BsBook className={styles.icon} />
-                      "Responsive web design" -
-                      <Link to={"https://www.freecodecamp.org/anaferreira"}>
-                        FreeCodeCamp
-                      </Link>
-                    </li>
-                    <li>
-                      <BsBook className={styles.icon} />
-                      "React - The complete guide" - Udemy
-                    </li>
-                  </ul>
-                  <br />
-                  Currently, I´m studing Tecnicatura Universitaria en
-                  Programación Informática at Universidad de Quilmes.
-                </h3>
+                <div className={styles.fadeIn}>
+                  <h3 className={styles.more}>
+                    I have completed the following courses and obtained
+                    certifications:
+                    <br /> <br />
+                    <ul>
+                      <li>
+                        <BsBook className={styles.icon} />
+                        "Introduction to Web Development" - UCDavis
+                      </li>
+                      <li>
+                        <BsBook className={styles.icon} /> "Diseñando páginas
+                        web con Bootstrap 4" - Universidad Austral
+                      </li>
+                      <li>
+                        <BsBook className={styles.icon} />
+                        "Responsive web design" -
+                        <Link to={"https://www.freecodecamp.org/anaferreira"}>
+                          FreeCodeCamp
+                        </Link>
+                      </li>
+                      <li>
+                        <BsBook className={styles.icon} />
+                        "React - The complete guide" - Udemy
+                      </li>
+                    </ul>
+                    <br />
+                    Currently, I´m studing Tecnicatura Universitaria en
+                    Programación Informática at Universidad de Quilmes.
+                  </h3>
+                </div>
               ) : null}
             </div>
           </div>
         </div>
         <div className={styles.skills}>
-          <h1>Skills</h1>
+          <h1>Tools & Technologies</h1>
           <br />
           <p>HTML</p>
           <p>CSS</p>
@@ -86,7 +104,6 @@ const About = () => {
           <p>Material UI</p>
           <p>Styled components</p>
           <p>Gatsby.js</p>
-          <p>GraphQL</p>
           <p>Git & Github</p>
           <p>Figma</p>
         </div>
