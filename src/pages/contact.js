@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Link } from "gatsby"
 import * as styles from "../../src/styles/contact.module.css"
 import { FaEnvelope } from "@react-icons/all-files/fa/FaEnvelope"
 
@@ -11,19 +10,19 @@ const Contact = () => {
         <h1>Contact me</h1>
         <br />
         <h2>
-          If you are interested in working, or just talking to me,{" "}
-          <Link to=""> get in touch!</Link>
+          If you have any questions, opportunities or would just like to say
+          hello <span alt="hand saying hello">&#x270B;</span> then feel free to
+          contact me!
         </h2>
-        <div>
-          <Link to="/" className={styles.btn}>
-            <FaEnvelope
-              className={styles.icon}
-              style={{ fill: "var(--clr-dark-complement)" }}
-            />
-            &nbsp; anabelevelyn@live.com
-          </Link>
-          &nbsp;
-        </div>
+        <br />
+
+        <h1 className={styles.email}>
+          <FaEnvelope
+            className={styles.icon}
+            style={{ fill: "var(--clr-dark-complement)" }}
+          />
+          &nbsp; anabelevelyn@live.com &nbsp;
+        </h1>
       </div>
     </Layout>
   )

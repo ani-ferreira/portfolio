@@ -6,19 +6,12 @@
 }
 .icon {
   font-size: 1em;
+  vertical-align: middle;
 }
 
-.btn {
-  display: inline-block;
-  color: var(--clr-dark-complement);
-  background: transparent;
-  padding: 10px 16px;
+.email {
+  padding: 1rem;
   border-radius: 30px;
-  margin-top: 20px;
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-
-.btn:hover {
-  background: white;
+  border: 2px solid var(--clr-dark-complement);
+  vertical-align: middle;
 }
