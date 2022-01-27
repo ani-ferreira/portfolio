@@ -47,8 +47,7 @@
   font-weight: 500;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
   box-shadow: 0 0.5em 0.5em -0.4em #8b8b8b;
   transform: translateY(-0.25em);
   transition: 300ms ease-out;

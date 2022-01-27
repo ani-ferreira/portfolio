@@ -8,7 +8,7 @@ sequence: 1
 fullImg: ../../images/projects/full/expedientesimg.png
 thumbImg: ../../images/projects/thumb/expedienteimg.png
 imageAlt: Logo
-app: https://github.com/ani-ferreira/expedientes
+app: null
 repo: https://github.com/ani-ferreira/expedientes
 ---
 

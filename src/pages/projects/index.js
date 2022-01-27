@@ -21,9 +21,13 @@ export default function allProjects({ data }) {
           <h2 className={styles.projecttitle}>{project.frontmatter.title}</h2>
           <p>{project.frontmatter.description}</p>
           <p className={styles.stack}>{project.frontmatter.stack}</p>
-          <Link to={project.frontmatter.app} className={styles.btn}>
-            <FaExternalLinkAlt /> Visit site
-          </Link>
+          {/*           only display visit link btn if there is a link
+           */}{" "}
+          {project.frontmatter.app && (
+            <Link to={project.frontmatter.app} className={styles.btn}>
+              <FaExternalLinkAlt /> Visit site
+            </Link>
+          )}
           &nbsp; &nbsp;
           <Link to={project.frontmatter.repo} className={styles.btn}>
             <FaGithub className={styles.gicon} />

@@ -8,7 +8,7 @@ sequence: 1
 fullImg: ../../images/projects/full/organizedimg.png
 thumbImg: ../../images/projects/thumb/organizedimg.png
 imageAlt: Logo
-app: https://github.com/ani-ferreira/materialUiNotes
+app: null
 repo: https://github.com/ani-ferreira/materialUiNotes
 ---
 
